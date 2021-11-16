@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# adding help function to explain the switch function
+#adding help function to explain the switch function
 Help()
 {
 	echo "This script creates host_info and host_usage tables if  they don't exist already."
@@ -9,7 +9,7 @@ Help()
 	echo "switch     Switch to the host_agent database."
 }
 
-# declaring a function/option to switch to the host_agent database
+#declaring a function/option to switch to the host_agent database
 declare -f | less
 <snip>
 switch ()
@@ -19,7 +19,7 @@ switch ()
 <snip>
 
 
-# creating `host_info` table if it does not exist
+#creating `host_info` table if it does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
 	(
 	time_stamp TIMESTAMP NOT NULL, 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
 	disk_available INT NOT NULL
 	);
 
-# creating `host_usage` table if it does not exist
+#creating `host_usage` table if it does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage 
 	(
 	time_stamp TIMESTAMP NOT NULL, 
