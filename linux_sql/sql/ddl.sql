@@ -1,4 +1,3 @@
- -- creating `host_info` table if it does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_info 
 	(
 	id SERIAL PRIMARY KEY NOT NULL, 
@@ -12,7 +11,6 @@ CREATE TABLE IF NOT EXISTS PUBLIC.host_info
 	time_stamp TIMESTAMP NOT NULL
 	);
 
--- creating `host_usage` table if it does not exist
 CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
 	(
 	time_stamp TIMESTAMP NOT NULL, 
