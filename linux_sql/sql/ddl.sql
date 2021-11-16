@@ -1,5 +1,3 @@
-#! /bin/sh
-
 #adding help function to explain the switch function
 Help()
 {
