@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # assigning the CLI arguments to variables 
 # the command will be position 1, username position 2, password position 3 
