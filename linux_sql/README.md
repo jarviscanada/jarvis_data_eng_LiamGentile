@@ -23,12 +23,12 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 `host_usage`
 - `host_id`: a unique identification number and foreign key, points to `id` from `host_info`
-- `memory_free`: a full, unique name for the node 
-- `cpu_idle`: the number of CPUs
-- `cpu_kernel`: a layout of the internals of the CPU (eg. x86_64)
-- `disk_io`: the full model name of the CPU
-- `disk_available`: a measurement of the transmission speed of the CPU (in mhz)
-- `time_stamp`: level 2 cache memory, separate from the chip core (in KB)
+- `memory_free`: amount of memory free (in MB)
+- `cpu_idle`: cpu idle percentage
+- `cpu_kernel`: cpu kernel percentage
+- `disk_io`: number of disk I/O
+- `disk_available`: disk available (in MB)
+- `time_stamp`: date and time of data retrieval in UTC
 
 ## Scripts
 
