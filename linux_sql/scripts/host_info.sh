@@ -34,7 +34,7 @@ total_mem=$(echo "$mem_info_out"  | egrep "^MemTotal:" | awk '{print $2+0}' | xa
 
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
-insert_stmt="INSERT INTO host_usage(host_name, cpu_number, cpu_architecture, 
+insert_stmt="INSERT INTO host_info(host_name, cpu_number, cpu_architecture, 
 	     cpu_model, cpu_mhz, L2_cache, total_mem, time_stamp) 
 	     VALUES('$host_name', '$cpu_number', '$cpu_architecture', 
             '$cpu_model', '$cpu_mhz', '$l2_cache', '$total_mem', '$timestamp')"
