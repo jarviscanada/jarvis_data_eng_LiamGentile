@@ -101,7 +101,6 @@ The script is used like this `./scripts/psql_docker.sh start|stop|create db_user
 
 
 ### SQL Scripts
-----------------------
 
 ##### `ddl.sql`
 
