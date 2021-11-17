@@ -68,9 +68,15 @@ The script consists of 5 essential parts:
 
 To execute the script you would run `./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password`. 
 
-*using `crontab` to automate `host_usage.sh` so it collects data every minute*
+**using `crontab` to automate `host_usage.sh` so it collects data every minute**
 
+First we edit the `crontab` with:
+- `crontab -e`
 
+Then we write the following in the `crontab`:
+-  `* * * * * bash /home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh localhost 5432 host_agent postgres password >     /tmp/host_usage.log`
+
+5 stars means the data will be collected ever minute (in crontab syntax). We pass the output of our script into a log file to save the updates. 
 
 ##### `psql_docker.sh`
 
