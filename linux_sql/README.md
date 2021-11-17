@@ -61,7 +61,9 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 ###### `ddl.sql`
 
-This is a simple script that creates two tables in the `host_agent` database if they don't exist already. These tables are `host_info` and `host_usage`.  
+This is a simple script that creates two tables in the `host_agent` database if they don't exist already. These tables are `host_info` and `host_usage`. The script uses standard Postgres SQL syntax. 
+
+To execute the script you'd run `psql -h localhost postgres -d host_agent -f sql/ddl.sql`. 
 
 ###### `queries.sql`
 -
