@@ -10,7 +10,7 @@ The goal of this project was to create a set of tools that allow a user to monit
 
 For this project, there is one database, named `host_data`. It consists of two tables, `host_info` and `host_usage`.
 
-'host_info`
+`host_info`
 . `id`:
 . `host_name`:
 . `cpu_number`:
