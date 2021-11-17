@@ -1,2 +1,16 @@
 # Linux Cluster Monitoring Agent
-This project is under development. Since this project follows the GitFlow, the final work will be merged to the master branch after the Master Code Review.
+
+## Introduction
+
+The goal of this project was to create a set of tools that allow a user to monitor different nodes connected in a Linux cluster by tracking each node's hardware specifications and resource usage in real time, and connecting that data automatically to a database.
+   
+## Architecture & Design
+
+## Database & Tables
+
+For this project, there is one database, named `host_data`. It consists of two tables, `host_info` and `host_usage`.
+
+
+## Scripts
+
+## Improvements
