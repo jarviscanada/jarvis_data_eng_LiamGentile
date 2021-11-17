@@ -37,7 +37,7 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 ## Scripts
 
-### Shell Scripts
+##### Shell Scripts
 
 `host_info.sh`
 -
@@ -54,9 +54,9 @@ For this project, there is one database, named `host_data`. It consists of two t
 -
 -
 
-### SQL Scripts
+##### SQL Scripts
 
-`ddl.sql1
+`ddl.sql`
 -
 -
 -
