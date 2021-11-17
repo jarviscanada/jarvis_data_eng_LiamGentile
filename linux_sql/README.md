@@ -41,6 +41,7 @@ For this project, there is one database, named `host_data`. It consists of two t
 ## Scripts
 
 ### Shell Scripts
+----------------------
 
 ##### `host_info.sh`
 
@@ -82,6 +83,7 @@ Then we write the following in the `crontab`:
 
 
 ### SQL Scripts
+----------------------
 
 ##### `ddl.sql`
 
