@@ -4,7 +4,7 @@
 
 The goal of this project was to create a set of tools that allow a user to monitor different nodes connected in a Linux cluster by tracking each node's hardware specifications and resource usage in real time and connecting that data automatically to a database.
 
-- **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PGSQL, Docker, Crontab*
+- **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PGSQL, docker, crontab*
 - **Project methodology:** *Agile & Scrum* 
    
 ## Architecture & Design
@@ -43,19 +43,23 @@ For this project, there is one database, named `host_data`. It consists of two t
 ### Shell Scripts
 
 ###### `host_info.sh`
--
--
--
+
+This script collects hardware data and inserts the data into a psql instance. It is assumed that this data is static, and so the script will be executed only once. 
 
 ###### `host_usage.sh`
--
--
--
 
+This script collects resource usage data and inserts the data into a psql instance. This script is executed every minute using `crontab` to track changes in the data over time. 
+
+The script consists of 5 essential parts:
+- 1. Assigning CLI arguments to variables
+- 2. Ensuring the user provides 5 arguments (using `if [ ]; then`)
+- 3. Assigning hardware info commands to variables and extracting desired columns to variables
+- 4. A PSQL insert statement to get the data into the database
+- 5. A psql command to execute the insert statement with the CLI arguments
+
+To execute the script you would run `./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password`. 
 ###### `psql_docker.sh`
--
--
--
+
 
 ### SQL Scripts
 
@@ -63,7 +67,7 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 This is a simple script that creates two tables in the `host_agent` database if they don't exist already. These tables are `host_info` and `host_usage`. The script uses standard Postgres SQL syntax. 
 
-To execute the script you'd run `psql -h localhost postgres -d host_agent -f sql/ddl.sql`. 
+To execute the script you would run `psql -h localhost postgres -d host_agent -f sql/ddl.sql`. 
 
 ###### `queries.sql`
 -
