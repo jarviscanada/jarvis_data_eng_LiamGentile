@@ -18,7 +18,7 @@ A bash agent consisting of two scripts (`host_info.sh` and `host usage.sh`) gath
 
 For this project, there is one database, named `host_data`. It consists of two tables, `host_info` and `host_usage`. `host_info` stores hardware specifications data that is assumed to stay constant, and `host_usage` stores resource usage data which is updated every minute by each node in order to track resource usage data over time.  
 
-###### `host_info`
+##### `host_info`
 - `id`: a unique identification number and primary key, autoincremented in PGSQL
 - `host_name`: a full, unique name for the node 
 - `cpu_number`: the number of CPUs
@@ -29,7 +29,7 @@ For this project, there is one database, named `host_data`. It consists of two t
 - `total_mem`: total memory usage (in KB)
 - `time_stamp`: date and time of data retrieval in UTC
 
-###### `host_usage`
+##### `host_usage`
 - `host_id`: a unique identification number and foreign key, points to `id` from `host_info`
 - `memory_free`: amount of memory free (in MB)
 - `cpu_idle`: cpu idle percentage
@@ -42,7 +42,7 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 ### Shell Scripts
 
-###### `host_info.sh`
+##### `host_info.sh`
 
 This script collects hardware data and inserts the data into a psql instance. It is assumed that this data is static, and so the script will be executed only once. 
 
@@ -55,7 +55,7 @@ The script consists of 5 essential parts:
 
 To execute the script you would run `./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password`. 
 
-###### `host_usage.sh`
+##### `host_usage.sh`
 
 This script collects resource usage data and inserts the data into a psql instance. This script is executed every minute using `crontab` to track changes in the data over time. 
 
@@ -67,20 +67,19 @@ The script consists of 5 essential parts:
 5. 
 
 To execute the script you would run `./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password`. 
-###### `psql_docker.sh`
+
+##### `psql_docker.sh`
 
 
 ### SQL Scripts
 
-###### `ddl.sql`
+##### `ddl.sql`
 
 This is a simple script that creates two tables in the `host_agent` database if they don't exist already. These tables are `host_info` and `host_usage`. The script uses standard Postgres SQL syntax. 
 
 To execute the script you would run `psql -h localhost postgres -d host_agent -f sql/ddl.sql`. 
 
-###### `queries.sql`
--
--
--
+##### `queries.sql`
+
 
 ## Improvements
