@@ -78,7 +78,7 @@ First we edit the `crontab` with:
 Then we write the following in the `crontab`:
 -  `* * * * * bash /home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh localhost 5432 host_agent postgres password >     /tmp/host_usage.log`
 
-5 stars means the data will be collected ever minute (in crontab syntax). We pass the output of our script into a log file to save the updates. 
+5 stars means the data will be collected every minute (in `crontab` syntax). We pass the output of our script into a log file to save the updates. 
 
 ----------------------
 
@@ -92,7 +92,9 @@ The script is composes of the following elements:
 3. `Case $cmd in` for create command 
 - if the container does not exist already and the user has provided 3 arguments then create a volume and a container with the given credentials
 4. `Case $cmd in` for start and stop commands
--
+- if the container exists already then we either `start` or `stop` the docker container
+5. `Case $cmd in` anything other than create/start/stop
+- print illegal command and display valid commands
 
 
 The script is used like this `./scripts/psql_docker.sh start|stop|create db_username db_password`
