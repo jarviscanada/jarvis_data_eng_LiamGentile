@@ -54,8 +54,8 @@ The script consists of 5 essential parts:
 1. Assigning CLI arguments to variables
 2. Ensuring the user provides 5 arguments (using `if [ ]; then`)
 3. Assigning hardware info commands to variables and extracting desired columns to variables
-4. A PSQL insert statement to get the data into the database
-5. A psql command to execute the insert statement with the CLI arguments
+4. An SQL insert statement to get the data into the database
+5. A `psql` command to execute the insert statement with the CLI arguments
 
 To execute the script you would run `./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password`. 
 ###### `psql_docker.sh`
