@@ -86,14 +86,14 @@ Then we write the following in the `crontab`:
 
 The purpose of this script is to allow a user to create, stop, or start a psql container. 
 
-The script is composes of the following elements:
+The script is composed of the following elements:
 1. Capturing CLI arguments (`cmd`, `db_username`, and `db_password`)
 2. Starting the docker and assigning the docker container status to a variable 
-3. `Case $cmd in` for create command 
+3. `Case $cmd in` for the `create` command 
 - if the container does not exist already and the user has provided 3 arguments then create a volume and a container with the given credentials
-4. `Case $cmd in` for start and stop commands
+4. `Case $cmd in` for the `start` and `stop` commands
 - if the container exists already then we either `start` or `stop` the docker container
-5. `Case $cmd in` anything other than create/start/stop
+5. `Case $cmd in` for anything other than `create`/`start`/`stop`
 - print illegal command and display valid commands
 
 
