@@ -106,7 +106,9 @@ The script is used like this `./scripts/psql_docker.sh start|stop|create db_user
 
 This is a simple script that creates two tables in the `host_agent` database if they don't exist already. These tables are `host_info` and `host_usage`. The script uses standard Postgres SQL syntax. 
 
-To execute the script you would run `psql -h localhost postgres -d host_agent -f sql/ddl.sql`. 
+To execute the script you would run `psql -h localhost postgres -d host_agent -f sql/ddl.sql`.
+
+----------------------
 
 ##### `queries.sql`
 
