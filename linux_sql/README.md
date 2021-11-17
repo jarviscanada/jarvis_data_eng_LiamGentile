@@ -78,7 +78,7 @@ First we edit the `crontab` with:
 Then we write the following in the `crontab`:
 -  `* * * * * bash /home/centos/dev/jrvs/bootcamp/linux_sql/host_agent/scripts/host_usage.sh localhost 5432 host_agent postgres password >     /tmp/host_usage.log`
 
-5 stars means the data will be collected every minute (in `crontab` syntax). We pass the output of our script into a log file to save the updates. 
+5 stars means the data will be collected every minute (in `crontab` syntax). We pass the output of our script into a `.log` file to save the updates. 
 
 ----------------------
 
