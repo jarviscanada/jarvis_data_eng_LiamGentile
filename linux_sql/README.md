@@ -37,4 +37,33 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 ## Scripts
 
+### Shell Scripts
+
+`host_info.sh`
+-
+-
+-
+
+`host_usage.sh`
+-
+-
+-
+
+`psql_docker.sh`
+-
+-
+-
+
+### SQL Scripts
+
+`ddl.sql1
+-
+-
+-
+
+`queries.sql`
+-
+-
+-
+
 ## Improvements
