@@ -46,10 +46,6 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 This script collects hardware data and inserts the data into a psql instance. It is assumed that this data is static, and so the script will be executed only once. 
 
-###### `host_usage.sh`
-
-This script collects resource usage data and inserts the data into a psql instance. This script is executed every minute using `crontab` to track changes in the data over time. 
-
 The script consists of 5 essential parts:
 1. Assigning CLI arguments to variables
 2. Ensuring the user provides 5 arguments (using `if [ ]; then`)
@@ -58,6 +54,19 @@ The script consists of 5 essential parts:
 5. A `psql` command to execute the insert statement with the CLI arguments
 
 To execute the script you would run `./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password`. 
+
+###### `host_usage.sh`
+
+This script collects resource usage data and inserts the data into a psql instance. This script is executed every minute using `crontab` to track changes in the data over time. 
+
+The script consists of 5 essential parts:
+1. 
+2. 
+3. 
+4. 
+5. 
+
+To execute the script you would run `./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password`. 
 ###### `psql_docker.sh`
 
 
