@@ -84,6 +84,19 @@ Then we write the following in the `crontab`:
 
 ##### `psql_docker.sh`
 
+The purpose of this script is to allow a user to create, stop, or start a psql container. 
+
+The script is composes of the following elements:
+1. Capturing CLI arguments (`cmd`, `db_username`, and `db_password`)
+2. Starting the docker and assigning the docker container status to a variable 
+3. `Case $cmd in` for create command 
+- if the container does not exist already and the user has provided 3 arguments then create a volume and a container with the given credentials
+4. `Case $cmd in` for start and stop commands
+-
+
+
+The script is used like this `./scripts/psql_docker.sh start|stop|create db_username db_password`
+
 
 ### SQL Scripts
 ----------------------
