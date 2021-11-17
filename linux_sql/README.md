@@ -114,3 +114,5 @@ To execute the script you would run `psql -h localhost postgres -d host_agent -f
 
 
 ## Improvements
+
+1. Adding help functions to the `.sh` scripts. 
