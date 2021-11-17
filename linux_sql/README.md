@@ -15,7 +15,7 @@ A bash agent consisting of two scripts (`host_info.sh` and `host usage.sh`) gath
 
 For this project, there is one database, named `host_data`. It consists of two tables, `host_info` and `host_usage`. `host_info` stores hardware specifications data that is assumed to stay constant, and `host_usage` stores resource usage data which is updated every minute by each node in order to track resource usage data over time.  
 
-`host_info`
+###### `host_info`
 - `id`: a unique identification number and primary key, autoincremented in PGSQL
 - `host_name`: a full, unique name for the node 
 - `cpu_number`: the number of CPUs
@@ -26,7 +26,7 @@ For this project, there is one database, named `host_data`. It consists of two t
 - `total_mem`: total memory usage (in KB)
 - `time_stamp`: date and time of data retrieval in UTC
 
-`host_usage`
+###### `host_usage`
 - `host_id`: a unique identification number and foreign key, points to `id` from `host_info`
 - `memory_free`: amount of memory free (in MB)
 - `cpu_idle`: cpu idle percentage
@@ -39,29 +39,29 @@ For this project, there is one database, named `host_data`. It consists of two t
 
 ### Shell Scripts
 
-`host_info.sh`
+###### `host_info.sh`
 -
 -
 -
 
-`host_usage.sh`
+###### `host_usage.sh`
 -
 -
 -
 
-`psql_docker.sh`
+###### `psql_docker.sh`
 -
 -
 -
 
 ### SQL Scripts
 
-`ddl.sql`
+###### `ddl.sql`
 -
 -
 -
 
-`queries.sql`
+###### `queries.sql`
 -
 -
 -
