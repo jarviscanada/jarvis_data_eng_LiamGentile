@@ -68,6 +68,10 @@ The script consists of 5 essential parts:
 
 To execute the script you would run `./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password`. 
 
+*using `crontab` to automate `host_usage.sh` so it collects data every minute*
+
+
+
 ##### `psql_docker.sh`
 
 
