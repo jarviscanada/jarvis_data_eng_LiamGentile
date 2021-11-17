@@ -3,6 +3,9 @@
 ## Introduction
 
 The goal of this project was to create a set of tools that allow a user to monitor different nodes connected in a Linux cluster by tracking each node's hardware specifications and resource usage in real time and connecting that data automatically to a database.
+
+*Tools & technologies used: Linux CentOS 7, VNC, Bash, Git, PGSQL, Docker, Crontab
+Project methodology: Agile & Scrum 
    
 ## Architecture & Design
 
@@ -57,9 +60,8 @@ For this project, there is one database, named `host_data`. It consists of two t
 ### SQL Scripts
 
 ###### `ddl.sql`
--
--
--
+
+This is a simple script that creates two tables in the `host_agent` database if they don't exist already. These tables are `host_info` and `host_usage`.  
 
 ###### `queries.sql`
 -
