@@ -60,11 +60,11 @@ To execute the script you would run `./scripts/host_info.sh psql_host psql_port 
 This script collects resource usage data and inserts the data into a psql instance. This script is executed every minute using `crontab` to track changes in the data over time. 
 
 The script consists of 5 essential parts:
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Assigning CLI arguments to variables
+2. Ensuring the user provides 5 arguments (using `if [ ]; then`)
+3. Assigning resource usage data commands to variables and extracting desired columns to variables
+4. A SQL insert statement (this time with a subquery insert statement that allows us to pull `host_id` from `id` (`host_info`)
+5. A `psql` command to execute the insert statements with the CLI arguments
 
 To execute the script you would run `./scripts/host_usage.sh psql_host psql_port db_name psql_user psql_password`. 
 
