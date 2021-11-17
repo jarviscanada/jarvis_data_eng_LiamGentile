@@ -4,7 +4,7 @@
 
 The goal of this project was to create a set of tools that allow a user to monitor different nodes connected in a Linux cluster by tracking each node's hardware specifications and resource usage in real time and connecting that data automatically to a database.
 
-- **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PGSQL, docker, crontab*
+- **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PostgreSQL, docker, crontab*
 - **Project methodology:** *Agile & Scrum* 
    
 ## Architecture & Design
