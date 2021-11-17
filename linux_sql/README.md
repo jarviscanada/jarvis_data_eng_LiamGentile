@@ -6,6 +6,9 @@ The goal of this project was to create a set of tools that allow a user to monit
    
 ## Architecture & Design
 
+![linux_cluster_architecture drawio](https://user-images.githubusercontent.com/80293145/142264534-01c87432-27c3-47f2-850c-2728ab94bbbd.png)
+
+
 ## Database & Tables
 
 For this project, there is one database, named `host_data`. It consists of two tables, `host_info` and `host_usage`. `host_info` stores hardware specifications data that is assumed to stay constant, and `host_usage` stores resource usage data which is updated every minute by each node in order to track resource usage data over time.  
