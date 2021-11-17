@@ -8,6 +8,8 @@ The goal of this project was to create a set of tools that allow a user to monit
 
 ![linux_cluster_architecture drawio](https://user-images.githubusercontent.com/80293145/142264534-01c87432-27c3-47f2-850c-2728ab94bbbd.png)
 
+A bash agent consisting of two scripts (`host_info.sh` and `host usage.sh`) gathers data from each node and then inserts the data into a psql instance. The bash agent is installed on each node. `host_info.sh` is only run once at the time of installation, whereas `host_usage.sh` is triggered by a `crontab` job every minute.  
+
 
 ## Database & Tables
 
