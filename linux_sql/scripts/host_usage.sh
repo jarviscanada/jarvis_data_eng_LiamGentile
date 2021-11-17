@@ -9,9 +9,9 @@ psql_password=$5
 
 # ensuring that the user provides five arguments
 if [ $# -ne 5 ]; then
-  echo 'This script requires five arguments:'
-	echo 'psql_host, psql_port, db_name, psql_user, psql_password'
-  exit 1
+      echo 'This script requires five arguments:'
+      echo 'psql_host, psql_port, db_name, psql_user, psql_password'
+      exit 1
 fi
 
 # assigning resource usage data commands to variables and pulling out our desired columns
