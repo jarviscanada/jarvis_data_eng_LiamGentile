@@ -4,7 +4,7 @@
 
 The goal of this project was to create a set of tools that allow a user to monitor different nodes connected in a Linux cluster by tracking each node's hardware specifications and resource usage in real time and connecting that data automatically to a database.
 
-- **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PostgreSQL, docker, crontab*
+- **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PostgreSQL, docker, crontab, Github*
 - **Project methodology:** *Agile & Scrum* 
    
 ## Architecture & Design
@@ -112,7 +112,28 @@ To execute the script you would run `psql -h localhost postgres -d host_agent -f
 
 ##### `queries.sql`
 
+This is a script that runs three queries and makes use of a created function. 
+
+**Query 1**
+- This query groups hosts by `cpu_number` and sorts by `total_mem` descending.
+- To order by `total_mem` within each `cpu_number` group, I had to use a window function.
+
+**round5 function**
+- This is a function that turns the `time_stamp` column into five minute intervals. 
+- I implemented this to make the second and third queries more succinct.
+
+**Query 2**
+- This query returns average used memory (in %) per host and five minute interval. 
+- It required creating a new column (`avg_used_mem_percentage`) from the `total_mem` and `memory_free` columns.
+- It also entailed a join statement because the query requires data from both tables. 
+
+**Query 3**
+- This query detects if the `crontab` job is failing.
+- It accomplishes this by returning groups of `host` and five minute intervals where the number of rows (data) inserted is less than 3. 
+- We can assume that these represent failures because our `crontab` job is running once per minute. 
 
 ## Improvements
 
 1. Adding help functions to the `.sh` scripts. 
+2. Creating more sample data at the time of creating the database to better test SQL queries. 
+3. Spending more time debugging code before pushing to Github (instead of updating many times). 
