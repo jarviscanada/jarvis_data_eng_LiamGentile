@@ -43,7 +43,7 @@ insert_stmt="INSERT INTO host_usage(host_id, memory_free, cpu_idle,
              '$cpu_kernel', '$disk_io', '$disk_available', '$timestamp')"
 
 # exporting password variable for psql child process to inherit
-export POSTGRES_PASSWORD=$psql_password 
+export PGPASSWORD=$psql_password 
 
 # inserting the data into a database using psql, the cli arguments, and the sql insert_stmt
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
