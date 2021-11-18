@@ -39,7 +39,7 @@ host_id="(SELECT id FROM host_info WHERE host_name='$hostname')"
 
 insert_stmt="INSERT INTO host_usage(host_id, memory_free, cpu_idle, 
              cpu_kernel, disk_io,disk_available, time_stamp) 
-             VALUES('$host_id', '$memory_free', '$cpu_idle', 
+             VALUES($host_id, '$memory_free', '$cpu_idle', 
              '$cpu_kernel', '$disk_io', '$disk_available', '$timestamp')"
 
 # exporting password variable for psql child process to inherit
