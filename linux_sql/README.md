@@ -114,20 +114,20 @@ To execute the script you would run `psql -h localhost postgres -d host_agent -f
 
 This is a script that runs three queries and makes use of a created function. 
 
-*Query 1*
+Query 1
 - This query groups hosts by `cpu_number` and sorts by `total_mem` descending.
 - To order by `total_mem` within each `cpu_number` group, I had to use a window function.
 
-*round5 function*
+round5 function
 - This is a function that turns the `time_stamp` column into five minute intervals. 
 - I implemented this to make the second and third queries more succinct.
 
-*Query 2*
+Query 2
 - This query returns average used memory (in %) per host and five minute interval. 
 - It required creating a new column (`avg_used_mem_percentage`) from the `total_mem` and `memory_free` columns.
 - It also entailed a join statement because the query requires data from both tables. 
 
-*Query 3*
+Query 3
 - This query detects if the `crontab` job is failing.
 - It accomplishes this by returning groups of `host` and five minute intervals where the number of rows (data) inserted is less than 3. 
 - We can assume that these represent failures because our `crontab` job is running once per minute. 
