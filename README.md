@@ -42,17 +42,17 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LiamGentil
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis (Nov.2021-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer, Jarvis Consulting (Nov.2021-present)**: Actively participated in an Agile/Scrum development environment. Implemented a Linux Node Monitoring Agent project.
 
-**Data Intern, Microdose Psychedelic Insights (Sept.2021-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Intern, Microdose Psychedelic Insights (Sep.2021-Nov.2021)**: Assisted in database design and improvements. Built an interactive map in Python to act as a company directory. Conducted research for conferences and updated the CRM.
 
 
 ## Education
 **McGill University (2014-2018)**, Bachelor of Arts, International Development Studies
-- Dean's List (2016)
 - CGPA: 3.72/4.0
 
 **BrainStation (2021-2021)**, Diploma, Data Science
+- 91% final average
 
 
 ## Miscellaneous
