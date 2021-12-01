@@ -1,6 +1,6 @@
 # Liam Gentile . Jarvis Consulting
 
-I have always been passionate about learning and problem solving. During my Bachelor's degree, I explored how the studies of economics, political science, and history can interact to help us learn from the past and work more effectively on international development challenges. I was first introduced to the world of data when I worked as a Hockey Video Analyst at Sportlogiq. While I worked in the space of sports data, my mind was opened to the immense possibilities of Data Science to help any type of business or organisation gain meaningful insights to both self-improve and improve the experience of those they serve. It was during my time at Sportlogiq that I realised I had to explore making a career in data. After going through a period of self-directed learning in Python, SQL, and Statistics, I decided to enroll in the BrainStation Data Science Diploma program. This program helped me to develop a wide-range of skills in data science and computer science more broadly, and my interest in data engineering grew from there. I love this field because I get to solve puzzles, I challenge myself every day, and I get to learn new tools and technologies all the time. 
+I am a new and ambitious Data Engineer. Empowered by my experience as a Hockey Video Analyst at SportlogIQ, I decided to seek out a data science education from BrainStation. While I developed a broad range of skills in data science and computer science, I found myself particularly interested in the backend of the data world, namely data engineering. This interest led me to my role at Jarvis Consulting. The more coding heavy and problem solving aspects of working with data are what excite me about this field, and I am intrigued by the prospect of playing a critical role in the technical management of data, and indirectly, the health of the business overall.
 
 ## Skills
 
@@ -20,8 +20,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LiamGentil
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LiamGentile/tree/master/core_java)]:
       
   - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  - JDBC App: This app implements Java Database Connectivity, creating an API which allows us to interact with and modify a PostgreSQL database independently of the persistence layer.
+  - Grep App: This is an application which takes three inputs from the user: regex, rootPath, and setOutFile, in order to look through a directory, list its files, look for lines in each file that match the given regex pattern, and write those matching lines to a new file. Deployed using Docker.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LiamGentile/tree/master/springboot)]: Not Started
 
@@ -42,7 +42,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LiamGentil
 
 ## Professional Experiences
 
-**Data Engineer, Jarvis Consulting (Nov.2021-present)**: Actively participated in an Agile/Scrum development environment. Implemented a Linux Node Monitoring Agent project.
+**Data Engineer, Jarvis Consulting (Nov.2021-present)**: Implementing projects that exercise core data engineering skills while working in a professional Agile & Scrum development environment. 
 
 **Data Intern, Microdose Psychedelic Insights (Sep.2021-Nov.2021)**: Assisted in database design and improvements. Built an interactive map in Python to act as a company directory. Conducted research for conferences and updated the CRM.
 
