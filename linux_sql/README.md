@@ -4,8 +4,18 @@
 
 The goal of this project was to create a set of tools that allow a user to monitor different nodes connected in a Linux cluster by tracking each node's hardware specifications and resource usage in real time and connecting that data automatically to a database.
 
+This project uses GCP to start a Virtual Machine, and from within the VM a docker instance is created and a PostgreSQL instance is provisioned on docker.  
+
 - **Tools & technologies used:** *Linux CentOS 7, VNC, Bash, Git, PostgreSQL, docker, crontab, Github*
 - **Project methodology:** *Agile & Scrum* 
+
+## Quick Start
+
+- `./psql_docker.sh start stop create`
+- create tables using `ddl.sql`
+- insert hardware data into database using `host_info.sh`
+- insert usage data into database using `host_usage.sh`
+- setup Crontab to automate `host_usage.sh` data insertion, see under `host_usage.sh` below
    
 ## Architecture & Design
 
@@ -131,6 +141,15 @@ This is a script that runs three queries and makes use of a created function.
 - This query detects if the `crontab` job is failing.
 - It accomplishes this by returning groups of `host` and five minute intervals where the number of rows (data) inserted is less than 3. 
 - We can assume that these represent failures because our `crontab` job is running once per minute. 
+
+## Test
+
+Testing was done manually. I ran the scripts in the CLI, and checked the commands against the postgres database to ensure that the commands executed correctly. SQL queries were tested using a mix of sample data and real single node data from my own virtual machine. 
+
+## Deployment
+
+- Deployed project to Github remote repository.
+- Docker container and postgres instance provisioned for data management.
 
 ## Improvements
 
