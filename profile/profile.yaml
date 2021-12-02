@@ -1,0 +1,119 @@
+# Preferred name (Characters only)
+name: "Liam Gentile"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_LiamGentile
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: "I have always been passionate about learning and problem solving. During my Bachelor's degree, I explored how the studies of economics, political science, and history can interact to help us learn from the past and work more effectively on international development challenges. I was first introduced to the world of data when I worked as a Hockey Video Analyst at Sportlogiq. While I worked in the space of sports data, my mind was opened to the immense possibilities of Data Science to help any type of business or organisation gain meaningful insights to both self-improve and improve the experience of those they serve. It was during my time at Sportlogiq that I realised I had to explore making a career in data. After going through a period of self-directed learning in Python, SQL, and Statistics, I decided to enroll in the BrainStation Data Science Diploma program. This program helped me to develop a wide-range of skills in data science and computer science more broadly, and my interest in data engineering grew from there. I love this field because I get to solve puzzles, I challenge myself every day, and I get to learn new tools and technologies all the time. "
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Python
+    - Agile/Scrum
+    - Git
+  # At least 5 skills
+  competent:
+    - Statistics
+    - Supervised ML
+    - Unsupervised ML
+    - IntelliJ IDEA
+    - Visual Studio Code
+  # At least 5 skills
+  familiar:
+    - HTML/CSS
+    - Javascript
+    - R
+    - REGEX
+    - Vue.JS
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Built a set of tools that allow a user to monitor different nodes connected in a Linux Cluster by tracking hardware specifications and resource usage in real time and connecting that data automatically to a database. Some tools and technologies used include: Linux CentOS 7, VNC, Git, Bash, PostgreSQL, docker, crontab, Github, Agile & Scrum." 
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: ""
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: ""
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: ""
+  - name: "Spark"
+    git_url: "/spark"
+    description: ""
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: ""
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "LyricBox"
+    #URL is optional
+    git_url: "https://github.com/liamgentile/LyricBox"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Created a neural-network powered idea generator for artists with writer's block. This project consisted of ideation, webscraping, data cleaning, data preparation and modelling, and building a web application."  
+  - name: "BikeShareToronto"
+    git_url: "https://github.com/liamgentile/BikeShareToronto"
+    description: "Created a Tableau dashboard summarising some key developments in Bike Share Toronto between 2017 and 2020. This project also entailed downloading data from Toronto Open Data, and cleaning and wrangling the data into a single DataFrame using Pandas."
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Data Engineer"
+    company: "Jarvis Consulting"
+    duration: "Nov.2021-present"
+    description: "Actively participated in an Agile/Scrum development environment. Implemented a Linux Node Monitoring Agent project."
+  - title: "Data Intern"
+    company: "Microdose Psychedelic Insights"
+    duration: "Sep.2021-Nov.2021"
+    description: "Assisted in database design and improvements. Built an interactive map in Python to act as a company directory. Conducted research for conferences and updated the CRM." 
+  - title: "Hockey Video Analyst"
+    company: "SportlogIQ"
+    duration: "Jan.2019-Jan.2021"
+    description: "Facilitated and verified the creation of high-quality data for professional hockey games. Collaborated with various stakeholders to develop a deep understanding of the organization's hockey analysis logic. Awarded analyst of the month and consistently recognised for high performance in data collection and quality assurance."
+
+#List of edcuation
+education: 
+  - school_name: "McGill University"
+    duration: "2014-2018"
+    degree: "Bachelor of Arts"
+    department: "International Development Studies"
+    # optional
+    awards_achievements: 
+      - "CGPA: 3.72/4.0"
+  - school_name: "BrainStation"
+    duration: "2021-2021"
+    degree: "Diploma"
+    department: "Data Science"
+    awards_achievements:
+        - "91% final average"
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+    - "Udemy Python (2021)"
+    - "Udemy SQL (2021)"
+    - "Udemy Statistics for Data Science (2021)"
+  - title: "Activities/Hobbies"
+    bullets:
+    - "Volunteer, Toronto Veg Food Bank"
