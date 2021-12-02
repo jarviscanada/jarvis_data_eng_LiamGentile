@@ -44,4 +44,4 @@ export PGPASSWORD=$psql_password
 
 # inserting the data into a database using psql, the cli arguments, and the sql insert_stmt
 psql -h $psql_host -p $psql_port -d $db_name -U $psql_user -c "$insert_stmt"
-exit 0
+exit $?
