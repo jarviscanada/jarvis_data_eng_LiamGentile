@@ -21,7 +21,7 @@ case $cmd in
   # check if container exists already (container exit status = 0)
   if [ $container_status -eq 0 ]; then
 	echo 'Container already exists'
-	exit 1	
+	exit 0	
   fi
 
   # ensure that all 3 arguments are given 
