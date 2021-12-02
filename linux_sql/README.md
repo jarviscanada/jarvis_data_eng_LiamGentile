@@ -156,3 +156,4 @@ Testing was done manually. I ran the scripts in the CLI, and checked the command
 1. Adding help functions to the `.sh` scripts. 
 2. Creating more sample data at the time of creating the database to better test SQL queries. 
 3. Spending more time debugging code before pushing to Github (instead of updating many times). 
+
