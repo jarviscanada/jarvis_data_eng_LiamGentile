@@ -6,6 +6,8 @@
 
 ## UML Diagram
 
+core_java/twitter/assets/twitter_uml.png
+
 ## Components
 
 ## Models
