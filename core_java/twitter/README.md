@@ -2,6 +2,15 @@
 
 # Quick Start
 
+`docker pull liamgentile/twitter`
+
+`docker run --rm \
+-e consumerKey=yourConsumerKey \
+-e consumerSecret=yourConsumerSecret \
+-e accessToken=yourAccessToken \
+-e tokenSecret=yourTokenSecret \
+liamgentile/twitter post|get|delete [options]`
+
 # Design
 
 ## UML Diagram
