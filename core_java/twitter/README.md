@@ -91,6 +91,7 @@
 - created_at, id, id_str, text, retweet_count, favourite_count, favourited, retweeted are root level attributes
 - entities and coordinates are child objects
 
+```json
 {
   "created_at" : "Fri Jun 26 17:32:16 +0000 2020",
   "id" : 1276568976764686343,
@@ -109,6 +110,7 @@
   "favourited" : false,
   "retweeted" : false
 }
+```
 
 #### Entities
 
