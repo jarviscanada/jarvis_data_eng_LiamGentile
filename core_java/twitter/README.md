@@ -138,6 +138,6 @@ The application was containerized using Docker and deployed to a public Docker i
 
 # Improvements
 
-- Improvement 1
-- Improvement 2
-- Improvement 3
+- Expand `postTweet` method to include optional imagePath parameter (to allow a user to post an image) 
+- Implement automation tool (Crontab) to post a tweet (i.e. advertising) at a regular time interval 
+- Implement `updateProfile` method, allowing user to change their name, location, and description from the CLI
