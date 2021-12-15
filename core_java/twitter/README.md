@@ -18,7 +18,15 @@
 ![twitter_uml](https://user-images.githubusercontent.com/80293145/146214683-49547761-8d79-47a7-9a2d-2e722135ffc6.png)
 
 
-## Components
+## TwitterCLIApp
+
+## TwitterController
+
+## TwitterService
+
+## TwitterDao
+
+## TwitterHttpHelper
 
 ## Models
 
