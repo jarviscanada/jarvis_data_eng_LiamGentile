@@ -1,5 +1,7 @@
 # Introduction
 
+This application allows a user to create, read, and delete tweets from the CLI using Twitter's REST API. The application implements object oriented programming in Java, dividing work between different classes based on a bottom-up approach, separating the application layer from the controller layer from the service layer, and so on. JUnit and Mockito were implemented as testing tools, and both unit and integrations tests were used. Maven and the Spring framework were used in conjunction to package and manage dependencies. The application was containerized using docker and deployed publicly to Docker Hub. 
+
 # Quick Start
 
 `docker pull liamgentile/twitter`
@@ -126,7 +128,13 @@
 
 # Test
 
+Integration Testing
+
+Unit Testing          
+
 ## Deployment
+          
+The application was containerized using Docker and deployed to a public Docker image at Docker Hub. Important source code was also pushed to this remote Git repository.           
 
 # Improvements
 
