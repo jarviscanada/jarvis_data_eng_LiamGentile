@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_LiamGentil
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LiamGentile/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: This app implements Java Database Connectivity, creating an API which allows us to interact with and modify a PostgreSQL database independently of the persistence layer.
-  - Grep App: This is an application which takes three inputs from the user: regex, rootPath, and setOutFile, in order to look through a directory, list its files, look for lines in each file that match the given regex pattern, and write those matching lines to a new file. Deployed using Docker.
+  - Twitter App: Allows a user to create, read, and delete tweets from the CLI using Twitter's REST API.
+  - JDBC App: Implements Java Database Connectivity, creating an API which allows us to interact with and modify a PostgreSQL database independently of the persistence layer.
+  - Grep App: Takes three CLI inputs from the user: regex, rootPath, and setOutFile, in order to look through a directory, list its files, look for lines in each file that match the given regex pattern, and write those matching lines to a new file.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_LiamGentile/tree/master/springboot)]: Not Started
 
