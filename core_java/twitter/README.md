@@ -125,12 +125,29 @@ This application allows a user to create, read, and delete tweets from the CLI u
 - This object represents the geographic location, using a List<Double> data structure (longitude first, latitude second)
 
 ### Spring
+          
+The Spring framework manages the dependencies within the application. Inversion of Control principle was used, so that objects define their dependencies only through constructor arguments. Dependencies are injected by the IoC container when it creates the bean (bean refers to the components of the APP that are created/instantiated in the main method). 
+          
+@Component: TwitterAppCLI, TwitterHttpHelper
+@Controller: TwitterController
+@Service: TwitterService
+@Repository: TwitterDao          
 
 # Test
+          
+Both integration testing (to confirm that classes work together as expected) and unit testing (to confirm that classes in isolation work) were used. Because there are several layers and class dependencies in the application, integration testing was essential to add on top of standard unit testing.         
 
-Integration Testing
+### Integration Testing
 
-Unit Testing          
+- Tested the public methods of the TwitterDao, TwitterController, and TwitterService classes
+- implemented @Before (setUp method) to instantiate TwitterDao instance with security keys/tokens           
+- called @Test methods using sample data         
+
+### Unit Testing 
+
+- Tested the public methods, of the TwitterHttpHelper, TwitterDao, and TwitterService classes
+- Used Mockito to instantiate mock required classes 
+- called @Test methods using sample data           
 
 ## Deployment
           
