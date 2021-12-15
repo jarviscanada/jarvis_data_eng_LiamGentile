@@ -18,19 +18,60 @@
 ![twitter_uml](https://user-images.githubusercontent.com/80293145/146214683-49547761-8d79-47a7-9a2d-2e722135ffc6.png)
 
 
-## TwitterCLIApp
+### TwitterCLIApp
 
-## TwitterController
+- Initializes the application components (classes) and their dependencies 
+- Parses command line arguments and prints tweets returned from the controller class methods
 
-## TwitterService
+`printTweet` method
+- converts `Tweet` object to Json string and prints the output
+- utility method that allows us to write cleaner code in our run method
 
-## TwitterDao
+`run` method
+- takes in command line arguments and runs the app using `Controller` methods`
+- uses switch case to handle post|show|delete functionality
+- allows for cleaner code in the main method (a simple `app.run(args)`)
 
-## TwitterHttpHelper
+### TwitterController
 
-## Models
+- This layer contains methods that take in the command line arguments and call the corresponding service layer method
+- No business logic, just taking user input and "sending" to service layer
+- Implements the Controller interface
 
-## Spring
+`postTweet` method
+- handles illegal command line argument exceptions 
+- returns `postTweet` method from service layer
+
+`showTweet` method
+- handles illegal command line argument exceptions
+- returns `showTweet` method from the service layer
+
+`deleteTweet` method
+- handles illegal command line argument exceptions
+- returns `deleteTweet` method from the service layer 
+
+
+### TwitterService
+
+- This layer handles the application's business logic - using `validatePostTweet` and `validateId` methods:
+
+          - Check if the tweet exceeds 140 characters and if lat/lon is out of range
+          - Check if tweet ids are correctly formatted (for searching)
+           
+- Once the business logic has been validated, each method returns a corresponding DAO method
+
+
+### TwitterDao
+
+- This layer handles 
+
+### TwitterHttpHelper
+
+- This layer is a helper layer that executes HTTP with a given URI and authorizes requests using Twitter API keys and tokens
+
+### Models
+
+### Spring
 
 # Test
 
