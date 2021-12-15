@@ -85,6 +85,41 @@
 
 ### Models
 
+#### Twitter
+
+- Object that recreates the basic tweet JSON structure.
+- created_at, id, id_str, text, retweet_count, favourite_count, favourited, retweeted are root level attributes
+- entities and coordinates are child objects
+
+{
+  "created_at" : "Fri Jun 26 17:32:16 +0000 2020",
+  "id" : 1276568976764686343,
+  "id_str" : "1276568976764686343",
+  "text" : "test post",
+  "entities" : {
+    "hashtags" : [ ],
+    "user_mentions" : [ ]
+  },
+  "coordinates" : {
+    "coordinates" : [ 79.0, 43.0 ],
+    "type" : "Point"
+  },
+  "retweet_count" : 0,
+  "favourite_count" : 0,
+  "favourited" : false,
+  "retweeted" : false
+}
+
+#### Entities
+
+- This object contains lists of sub-objects hashtags and user_mentions
+- hashtags represents the hashtags which are found in the tweet
+- user_mentions represents other users who are mentioned in the tweet
+
+#### Coordinates
+
+- This object represents the geographic location, using a List<Double> data structure (longitude first, latitude second)
+
 ### Spring
 
 # Test
