@@ -4,11 +4,11 @@
 
 `docker pull liamgentile/twitter`
 
-`docker run --rm \`
-`-e consumerKey=yourConsumerKey \`
-`-e consumerSecret=yourConsumerSecret \`
-`-e accessToken=yourAccessToken \`
-`-e tokenSecret=yourTokenSecret \`
+`docker run --rm`
+`-e consumerKey=yourConsumerKey`
+`-e consumerSecret=yourConsumerSecret`
+`-e accessToken=yourAccessToken`
+`-e tokenSecret=yourTokenSecret`
 `liamgentile/twitter post|get|delete [options]`
 
 # Design
