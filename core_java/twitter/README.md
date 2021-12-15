@@ -59,15 +59,29 @@
           - Check if tweet ids are correctly formatted (for searching)
            
 - Once the business logic has been validated, each method returns a corresponding DAO method
+- This class implements the Service Interface
 
 
 ### TwitterDao
 
-- This layer handles 
+- This layer makes Twitter REST API URIs and makes HTTP calls using HttpHelper methods
+- Implements the CrdDao Interface
+
+`parseReponseBody` 
+- takes HTTP response and converts to Json String and then Tweet object
+
+`create`, `findById`, and `deleteById` methods
+- Use HttpHelper with method specific URIs to return corresponding parseResponseBody response
 
 ### TwitterHttpHelper
 
 - This layer is a helper layer that executes HTTP with a given URI and authorizes requests using Twitter API keys and tokens
+
+`executeHttpRequest` method
+- takes in either get or post method and signs HTTP request accordingly
+
+`httpPost` and `httpGet` methods
+- run the `executeHttpRequest` method with corresponding POST|GET method 
 
 ### Models
 
